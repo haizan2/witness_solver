@@ -22,7 +22,80 @@
     <![endif]-->
         <div id="wrapper">
           <div id="sidebar-wrapper">
-            <p>Sidebar</p>
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">Grid Settings</h4>
+                </div>
+                <div class="panel-body">
+                  <form class="form">
+                    <div class="form-group">
+                      <label for="menu-dim-w">Dimensions</label>
+                      <div class="input-group">
+                        <input id="menu-dim-w" type="number" min="1" max="10" step="1" style="width:40px;"/>
+                        x
+                        <input id="menu-dim-h" type="number" min="1" max="10" step="1"  style="width:40px;"/>
+                      </div>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input id="menu-mirror-x" type="checkbox"/>
+                        Mirror horizontally
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input id="menu-mirror-y" type="checkbox"/>
+                        Mirror vertically
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input id="menu-mirror-color" type="checkbox"/>
+                        Make mirrored lines different colors
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input id="menu-loop-x" type="checkbox"/>
+                        Loop horizontally
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input id="menu-loop-y" type="checkbox"/>
+                        Loop vertically
+                      </label>
+                    </div>
+                    <button id="btn-apply" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Warning: This will wipe out this puzzle and produce a new grid">Apply</button>
+                  </form>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">Constraints</h4>
+                </div>
+                <div class="panel-body"></div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">Nodes and Edges</h4>
+                </div>
+                <div class="panel-body"></div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">Colors</h4>
+                </div>
+                <div class="panel-body"></div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">Skin</h4>
+                </div>
+                <div class="panel-body"></div>
+              </div>
+            </div>
           </div>
           <div id="page-content-wrapper">
             <p>Content</p>

@@ -1,17 +1,19 @@
 
 #wrapper {
-    padding-left: 300px;
+    padding-left: 340px;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 300px;
-    width: 300px;
+    left: 340px;
+    width: 340px;
     height: 100%;
-    margin-top: 15px;
-    margin-left: -285px;
+    margin: 0;
+    margin-left: -340px;
+    padding: 10px;
     overflow-y: auto;
+    background-color: #f1f1f1;
 }
 
 #page-content-wrapper {
@@ -20,7 +22,9 @@
     padding: 20px;
 }
 
-
+label {
+    padding-right: 15px;
+}
 
 
 
