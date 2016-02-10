@@ -26,11 +26,11 @@ label {
     padding-right: 15px;
 }
 
-
-
-
-
-
-
-
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 35px;
+    margin-bottom: 5px;
+}
 

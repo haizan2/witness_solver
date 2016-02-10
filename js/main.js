@@ -1,4 +1,2 @@
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+initialize_ui();
