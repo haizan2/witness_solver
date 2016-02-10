@@ -34,3 +34,10 @@ label {
     margin-bottom: 5px;
 }
 
+.menu-color-select {
+    stroke-opacity: 0;
+}
+.menu-color-select:hover {
+    stroke-opacity: 1;
+    stroke-width: 4px;
+}
