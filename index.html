@@ -71,9 +71,9 @@
             <div class="panel-group">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title">Grid Settings</h4>
+                  <h4 class="panel-title"><a class="collapse-toggle" role="button" data-toggle="collapse" data-target="#menu-grid-panel">Grid Settings</a></h4>
                 </div>
-                <div class="panel-body">
+                <div id="menu-grid-panel" class="panel-body collapse in">
                   <form class="form">
                     <div class="form-group">
                       <label for="menu-dim-w">Dimensions</label>
@@ -119,9 +119,9 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title">Constraints</h4>
+                  <h4 class="panel-title"><a class="collapse-toggle" data-toggle="collapse" data-target="#menu-constraints-panel">Constraints</a></h4>
                 </div>
-                <div class="panel-body">
+                <div id="menu-constraints-panel" class="panel-body collapse in">
                   <button id="menu-constr-square" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="30" height="30" viewBox="-50 -70 100 120"><use class="menu-constr-shape" xlink:href="#constraint-square"/></svg></button>
                   <button id="menu-constr-error" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-50 -70 100 120"><use class="menu-constr-shape" xlink:href="#constraint-error"/></svg></button>
                   <button id="menu-constr-tetris" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-50 -70 100 120"><use class="menu-constr-shape" xlink:href="#tetris-display"/></svg></button>
@@ -132,9 +132,9 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title">Nodes and Edges</h4>
+                  <h4 class="panel-title"><a class="collapse-toggle" data-toggle="collapse" data-target="#menu-nodes-panel">Nodes and Edges</a></h4>
                 </div>
-                <div class="panel-body">
+                <div id="menu-nodes-panel" class="panel-body collapse in">
                   <button id="menu-constr-start" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="45" height="45" viewBox="-43 -65 100 120"><use class="menu-constr-shape" xlink:href="#startpoint-display"/></svg></button>
                   <button id="menu-constr-end" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-50 -70 100 120">
                     <defs>
@@ -177,23 +177,23 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title">Colors</h4>
+                  <h4 class="panel-title"><a class="collapse-toggle" data-toggle="collapse" data-target="#menu-colors-panel">Colors</a></h4>
                 </div>
-                <div class="panel-body">
+                <div id="menu-colors-panel" class="panel-body collapse in">
                   <svg width="100%" height="50">
                     <defs>
                       <clipPath id="menu-color-clip" clipPathUnits="objectBoundingBox">
                         <rect clip-rule="evenodd" x="0" y="0" width="100%" height="100%">
                       </clipPath>
                     </defs>
-                    <rect class="menu-color-select" x="0%"    y="0" width="12.5%" height="50" fill="#000000" stroke="#FFFFFF" clip-path="url(#menu-color-clip)"/>
-                    <rect class="menu-color-select" x="12.5%" y="0" width="12.5%" height="50" fill="#FFFFFF" stroke="#000000" clip-path="url(#menu-color-clip)"/>
-                    <rect class="menu-color-select" x="25%"   y="0" width="12.5%" height="50" fill="#FF0000" stroke="#00FFFF" clip-path="url(#menu-color-clip)"/>
-                    <rect class="menu-color-select" x="37.5%" y="0" width="12.5%" height="50" fill="#00FF00" stroke="#FF00FF" clip-path="url(#menu-color-clip)"/>
-                    <rect class="menu-color-select" x="50%"   y="0" width="12.5%" height="50" fill="#0000FF" stroke="#FFFF00" clip-path="url(#menu-color-clip)"/>
-                    <rect class="menu-color-select" x="62.5%" y="0" width="12.5%" height="50" fill="#00FFFF" stroke="#FF0000" clip-path="url(#menu-color-clip)"/>
-                    <rect class="menu-color-select" x="75%"   y="0" width="12.5%" height="50" fill="#FF00FF" stroke="#00FF00" clip-path="url(#menu-color-clip)"/>
-                    <rect class="menu-color-select" x="87.5%" y="0" width="12.5%" height="50" fill="#FFFF00" stroke="#0000FF" clip-path="url(#menu-color-clip)"/>
+                    <rect class="menu-color-select" x="0%"    y="0" width="12.5%" height="50" fill="#000000" stroke="#888" clip-path="url(#menu-color-clip)"/>
+                    <rect class="menu-color-select" x="12.5%" y="0" width="12.5%" height="50" fill="#FFFFFF" stroke="#888" clip-path="url(#menu-color-clip)"/>
+                    <rect class="menu-color-select" x="25%"   y="0" width="12.5%" height="50" fill="#FF0000" stroke="#888" clip-path="url(#menu-color-clip)"/>
+                    <rect class="menu-color-select" x="37.5%" y="0" width="12.5%" height="50" fill="#00FF00" stroke="#888" clip-path="url(#menu-color-clip)"/>
+                    <rect class="menu-color-select" x="50%"   y="0" width="12.5%" height="50" fill="#0000FF" stroke="#888" clip-path="url(#menu-color-clip)"/>
+                    <rect class="menu-color-select" x="62.5%" y="0" width="12.5%" height="50" fill="#00FFFF" stroke="#888" clip-path="url(#menu-color-clip)"/>
+                    <rect class="menu-color-select" x="75%"   y="0" width="12.5%" height="50" fill="#FF00FF" stroke="#888" clip-path="url(#menu-color-clip)"/>
+                    <rect class="menu-color-select" x="87.5%" y="0" width="12.5%" height="50" fill="#FFFF00" stroke="#888" clip-path="url(#menu-color-clip)"/>
                   </svg>
                 </div>
               </div>

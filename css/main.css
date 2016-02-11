@@ -41,3 +41,8 @@ label {
     stroke-opacity: 1;
     stroke-width: 4px;
 }
+
+a.collapse-toggle {
+    cursor: pointer;
+    text-decoration: none;
+}
