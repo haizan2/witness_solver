@@ -27,6 +27,10 @@ html, body {
     position: relative;
     padding: 10px;
 }
+a.collapse-toggle {
+    cursor: pointer;
+    text-decoration: none;
+}
 
 label {
     padding-right: 15px;
@@ -47,8 +51,10 @@ label {
     stroke-opacity: 1;
     stroke-width: 4px;
 }
-
-a.collapse-toggle {
-    cursor: pointer;
-    text-decoration: none;
+.menu-constr-shape, .menu-grid-shape {
+    stroke: black;
+    stroke-width: 0.7px;
+}
+.menu-btn-icon {
+    vertical-align: middle;
 }

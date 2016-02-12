@@ -22,15 +22,6 @@
     <![endif]-->
         <svg id="svg-definitions" width="0" height="0" style="display: none">
           <defs>
-            <g id="constraint-square">
-              <rect x="-50" y="-50" width="100" height="100" rx="25" ry="25"/>
-            </g>
-            <g id="constraint-star">
-              <polygon points="50,0 33.2597,13.7766 35.3553,35.3553 13.7766,33.2597 0.0000,50 -13.7766,33.2597 -35.3553,35.3553 -33.2597,13.7766 -50,0.0000 -33.2597,-13.7766 -35.3553,-35.3553 -13.7766,-33.2597 -0.0000,-50 13.7766,-33.2597 35.3553,-35.3553 33.2597,-13.7766"/>
-            </g>
-            <g id="constraint-error">
-              <polygon points="7,-40 8.4,-4.8497 38.1410,13.9378 31.1410,26.0622 0,8.3138 -31.9378,26.0622 -38.1410,13.9378 -8.4,-4.8497 -7,-40"/>
-            </g>
             <g id="constraint-triangle-1">
               <polygon points="0,-20 -17.3205,10 17.3205,10" fill="#F9BA48" stroke="none"/>
             </g>
@@ -43,27 +34,6 @@
               <polygon points="-35,-20 -52.3205,10 -17.6795,10" fill="#F9BA48" stroke="none"/>
               <polygon points="35,-20 52.3205,10 17.6795,10" fill="#F9BA48" stroke="none"/>
             </g>
-            <g id="triangle-display">
-              <polygon points="0,-40 -34.641,20 34.641,20" fill="#F9BA48" stroke="none"/>
-            </g>
-            <g id="tetris-display">
-              <rect x="2.5" y="-15" width="30" height="30"/>
-              <rect x="2.5" y="-50" width="30" height="30"/>
-              <rect x="2.5" y="20" width="30" height="30"/>
-              <rect x="-32.5" y="-50" width="30" height="30"/>
-            </g>
-            <g id="startpoint-display">
-              <circle cx="0" cy="0" r="50"/>
-            </g>
-            <g id="constraint-hexagon">
-              <polygon points="20,0 10,17.3205 -10,17.3205 -20,0 -10,-17.3205 10,-17.3205" fill="black" stroke="none"/>
-            </g>
-            <filter id="colorTint"><feColorMatrix in="SourceGraphic" type="matrix"
-              values="1 0 0 0 0
-                      0 1 0 0 0
-                      0 0 1 0 0
-                      0 0 0 1 0"/>
-            </filter>
           </defs>
         </svg>
         <div id="wrapper">
@@ -122,12 +92,24 @@
                   <h4 class="panel-title"><a class="collapse-toggle" data-toggle="collapse" data-target="#menu-constraints-panel">Constraints</a></h4>
                 </div>
                 <div id="menu-constraints-panel" class="panel-body collapse in">
-                  <button id="menu-constr-square" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="30" height="30" viewBox="-50 -70 100 120"><use class="menu-constr-shape" xlink:href="#constraint-square"/></svg></button>
-                  <button id="menu-constr-error" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-50 -70 100 120"><use class="menu-constr-shape" xlink:href="#constraint-error"/></svg></button>
-                  <button id="menu-constr-tetris" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-50 -70 100 120"><use class="menu-constr-shape" xlink:href="#tetris-display"/></svg></button>
-                  <button id="menu-constr-star" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-50 -70 100 120"><use class="menu-constr-shape" xlink:href="#constraint-star"/></svg></button>
-                  <button id="menu-constr-triangle" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-50 -75 100 120"><use xlink:href="#triangle-display"/></svg></button>
-                  <button id="menu-constr-hexagon" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-30 -33 60 60"><use xlink:href="#constraint-hexagon"/></svg></button>
+                  <button id="menu-constr-square" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40"><rect class="menu-constr-shape" x="5" y="5" width="30" height="30" rx="10" ry="10"/></svg>
+                  </button>
+                  <button id="menu-constr-error" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40"><polygon class="menu-constr-shape" points="22.7400,9.3659 22.9070,18.3216 30.5794,22.9441 27.8394,27.6900 20,23.3567 12.1606,27.6900 9.4206,22.9441 17.0930,18.3216 17.2600,9.3659"/></svg>
+                  </button>
+                  <button id="menu-constr-tetris" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40"><rect class="menu-constr-shape" x="8" y="1" width="10" height="10"/><rect class="menu-constr-shape" x="22" y="1" width="10" height="10"/><rect class="menu-constr-shape" x="22" y="15" width="10" height="10"/><rect class="menu-constr-shape" x="22" y="29" width="10" height="10"/></svg>
+                  </button>
+                  <button id="menu-constr-star" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40"><polygon class="menu-constr-shape" points="20,3.5 24.4774,9.1906 31.6673,8.3327 30.8094,15.5226 36.5,20 30.8094,24.4774 31.6673,31.6673 24.4774,30.8094 20,36.5 15.5226,30.8094 8.3327,31.6673 9.1906,24.4474 3.5,20 9.1906,15.5226 8.3327,8.3327 15.5226,9.1906"/></svg>
+                  </button>
+                  <button id="menu-constr-triangle" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40"><polygon points="20,9 29.5263,25.5 10.4737,25.5" fill="#F9BA48" stroke="none"/></svg>
+                  </button>
+                  <button id="menu-constr-hexagon" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40"><polygon points="10,20 15,28.66025 25,28.66025 30,20 25,11.33975 15,11.33975" fill="#000000" stroke="none"/></svg>
+                  </button>
                 </div>
               </div>
               <div class="panel panel-default">
@@ -135,44 +117,60 @@
                   <h4 class="panel-title"><a class="collapse-toggle" data-toggle="collapse" data-target="#menu-nodes-panel">Nodes and Edges</a></h4>
                 </div>
                 <div id="menu-nodes-panel" class="panel-body collapse in">
-                  <button id="menu-constr-start" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="45" height="45" viewBox="-43 -65 100 120"><use class="menu-constr-shape" xlink:href="#startpoint-display"/></svg></button>
-                  <button id="menu-constr-end" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-50 -70 100 120">
-                    <defs>
-                      <linearGradient id="grad-fo1">
-                        <stop offset="0%" stop-color="black" stop-opacity="0"/>
-                        <stop offset="40%" stop-color="black" stop-opacity="1"/>
-                      </linearGradient>
-                    </defs>
-                    <rect x="-50" y="-30" width="70" height="60" fill="url(#grad-fo1)"/>
-                    <circle cx="20" cy="0" r="30"/>
-                  </svg></button>
-                  <button id="menu-constr-break" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="45" height="35" viewBox="-65 -70 140 120">
-                    <defs>
-                      <linearGradient id="grad-fo2">
-                        <stop offset="0%" stop-color="black" stop-opacity="0"/>
-                        <stop offset="30%" stop-color="black" stop-opacity="1"/>
-                      </linearGradient>
-                      <linearGradient id="grad-fo3">
-                        <stop offset="70%" stop-color="black" stop-opacity="1"/>
-                        <stop offset="100%" stop-color="black" stop-opacity="0"/>
-                      </linearGradient>
-                    </defs>
-                    <rect x="-70" y="-30" width="50" height="60" fill="url(#grad-fo2)"/>
-                    <rect x="20" y="-30" width="50" height="60" fill="url(#grad-fo3)"/>
-                  </svg></button>
-                  <button id="menu-constr-diagonal" type="button" class="btn btn-default btn-circle menu-toggle-btn"><svg width="35" height="35" viewBox="-50 -50 100 100">
-                    <defs>
-                      <linearGradient id="grad-fo4">
-                        <stop offset="0%" stop-color="black" stop-opacity="0"/>
-                        <stop offset="20%" stop-color="black" stop-opacity="1"/>
-                        <stop offset="80%" stop-color="black" stop-opacity="1"/>
-                        <stop offset="100%" stop-color="black" stop-opacity="0"/>
-                      </linearGradient>
-                    </defs>
-                    <g transform="rotate(45)">
-                      <rect x="-50" y="-20" width="100" height="40" fill="url(#grad-fo4)"/>
-                    </g>
-                  </svg></button>
+                  <button id="menu-constr-start" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40"><circle class="menu-grid-shape" cx="20" cy="20" r="19"/></svg>
+                  </button>
+                  <button id="menu-constr-end" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40">
+                      <defs>
+                        <linearGradient id="fo-grad1" y2="0" x2="100%">
+                          <stop offset="0%" stop-color="white" stop-opacity="0"/>
+                          <stop offset="20%" stop-color="white" stop-opacity="1"/>
+                        </linearGradient>
+                        <mask id="fo-mask1">
+                          <rect x="0" y="10" width="40" height="20" fill="url(#fo-grad1)"/>
+                          <rect x="30" y="5" width="15" height="30" fill="black"/>
+                        </mask>
+                      </defs>
+                      <circle class="menu-grid-shape" cx="30" cy="20" r="10"/>
+                      <rect class="menu-grid-shape" x="0" y="10" width="40" height="20" mask="url(#fo-mask1)"/>
+                    </svg>
+                  </button>
+                  <button id="menu-constr-break" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40">
+                      <defs>
+                        <linearGradient id="fo-grad2" y2="0" x2="100%">
+                          <stop offset="0%" stop-color="white" stop-opacity="0"/>
+                          <stop offset="20%" stop-color="white" stop-opacity="1"/>
+                          <stop offset="80%" stop-color="white" stop-opacity="1"/>
+                          <stop offset="100%" stop-color="white" stop-opacity="0"/>
+                        </linearGradient>
+                        <mask id="fo-mask2">
+                          <rect x="0" y="10" width="40" height="20" fill="url(#fo-grad2)"/>
+                          <rect x="15" y="5" width="10" height="30" fill="black"/>
+                        </mask>
+                      </defs>
+                      <rect class="menu-grid-shape" x="0" y="10" width="40" height="20" mask="url(#fo-mask2)"/>
+                    </svg>
+                  </button>
+                  <button id="menu-constr-diagonal" type="button" class="btn btn-default btn-circle menu-toggle-btn">
+                    <svg class="menu-btn-icon" width="40" height="40">
+                      <defs>
+                        <linearGradient id="fo-grad3" y2="0" x2="100%">
+                          <stop offset="0%" stop-color="white" stop-opacity="0"/>
+                          <stop offset="20%" stop-color="white" stop-opacity="1"/>
+                          <stop offset="80%" stop-color="white" stop-opacity="1"/>
+                          <stop offset="100%" stop-color="white" stop-opacity="0"/>
+                        </linearGradient>
+                        <mask id="fo-mask3">
+                          <rect x="-20" y="-10" width="40" height="20" fill="url(#fo-grad3)"/>
+                        </mask>
+                      </defs>
+                      <g transform="translate(20,20) rotate(45)">
+                        <rect class="menu-grid-shape" x="-20" y="-10" width="40" height="20" mask="url(#fo-mask3)"/>
+                      </g>
+                    </svg>
+                  </button>
                 </div>
               </div>
               <div class="panel panel-default">
@@ -201,9 +199,11 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title">Skin</h4>
+                  <h4 class="panel-title"><a class="collapse-toggle" data-toggle="collapse" data-target="#menu-skin-panel">Skin</a></h4>
                 </div>
-                <div class="panel-body"></div>
+                <div id="menu-skin-panel" class="panel-body collapse">
+                  There's nothing here yet.
+                </div>
               </div>
             </div>
           </div>
